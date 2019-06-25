@@ -63,6 +63,7 @@ public class WifiManagerPlugin extends CordovaPlugin {
     private static final String ACTION_GET_WIFI_AP_STATE = "getWifiApState";
     private static final String ACTION_GET_WIFI_STATE = "getWifiState";
     private static final String ACTION_IS_SCAN_ALWAYS_AVAILABLE = "isScanAlwaysAvailable";
+    private static final String ACTION_IS_5GHZ_BAND_SUPPORTED = "is5GHzBandSupported";
     private static final String ACTION_IS_WIFI_AP_ENABLED = "isWifiApEnabled";
     private static final String ACTION_IS_WIFI_ENABLED = "isWifiEnabled";
     private static final String ACTION_REASSOCIATE = "reassociate";
@@ -184,6 +185,7 @@ public class WifiManagerPlugin extends CordovaPlugin {
         else if(action.equals(ACTION_GET_WIFI_AP_STATE)) return getWifiApState(callbackContext);
         else if(action.equals(ACTION_GET_WIFI_STATE)) getWifiState(callbackContext);
         else if(action.equals(ACTION_IS_SCAN_ALWAYS_AVAILABLE)) isScanAlwaysAvailable(callbackContext);
+        else if(action.equals(ACTION_IS_5GHZ_BAND_SUPPORTED)) is5GHzBandSupported(callbackContext);
         else if(action.equals(ACTION_IS_WIFI_AP_ENABLED)) return isWifiApEnabled(callbackContext);
         else if(action.equals(ACTION_IS_WIFI_ENABLED)) isWifiEnabled(callbackContext);
         else if(action.equals(ACTION_REASSOCIATE)) reassociate(callbackContext);
