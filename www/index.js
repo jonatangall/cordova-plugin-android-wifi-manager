@@ -13,6 +13,7 @@ var METHODS = [
   'isScanAlwaysAvailable',
   'isWifiApEnabled',
   'isWifiEnabled',
+  'is5GHzBandSupported',
   'reassociate',
   'reconnect',
   'removeNetwork',

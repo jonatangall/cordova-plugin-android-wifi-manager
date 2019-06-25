@@ -325,6 +325,11 @@ public class WifiManagerPlugin extends CordovaPlugin {
         boolean available = wifiManager.isScanAlwaysAvailable();
         callbackContext.sendPluginResult(OK(available));
     }
+    
+    private void is5GHzBandSupported(CallbackContext callbackContext) throws JSONException {
+        boolean supported = wifiManager.is5GHzBandSupported();
+        callbackContext.sendPluginResult(OK(supported));
+    }
 
     private boolean isWifiApEnabled(CallbackContext callbackContext) throws JSONException {
         Class<?> klass = wifiManager.getClass();
