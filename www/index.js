@@ -86,7 +86,7 @@ METHODS.forEach(function (method) {
 
     exec(method, args, function (err, result) {
       if (err) return cb(err)
-      cb(null, result.data)
+      cb(null, result.data || result)
     })
   }
 })
